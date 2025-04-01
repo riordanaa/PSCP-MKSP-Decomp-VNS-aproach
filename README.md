@@ -1,7 +1,8 @@
 # [PSSC](https://doi.org/XXXXX)
 
+Original work: https://link.springer.com/article/10.1007/s10732-025-09552-7
 ## Abstract
-Paper abstract or summary of the article submitted.
+The partial set covering problem (PSCP) is a significant combinatorial optimization problem that finds applications in numerous real-world scenarios. The objective of PSCP is to encompass a minimum number of subsets while ensuring the coverage of at least n elements. Due to its NP-hard nature, solving large-scale PSCP efficiently remains a critical issue in computational intelligence. 
 
 ## Authors
 Authors involved in this work and their respective contributions:
