@@ -18,17 +18,40 @@ Instances are categorized in different datasets inside the 'instances' folder. A
 
 (Explain instance format so other users may easily use them even if not using your code.)
 
+### Solution format
+First line contains the number of sets (n), which is the objective function that we have to minimize.
+Second line contains n integers, each one representing the chosen set whose elements are covered.
+
 
 ## Compiling
+An executable version of the project is available at the root folder, called `PSSC.jar`. You may recompile the project using using Maven and a recent version of Java (17+):
 
-You can easily compile and build an executable artifact of this project using Maven and a recent version of Java (17+):
-```text
+```shell
 mvn clean package
 ```
 
-## Executing
+Executable artifacts are generated inside the `target` by default.
 
-Executable artifacts are generated inside the `target` directory. For ease of use, there is an already executable JAR inside the target folder.
+
+## Executing
+### Validating solutions
+
+You can validate the solution using the `validate` command. This command will check if the solution is valid and if it covers all the elements.
+
+Example of an unfeasible solution:
+
+```shell
+java -jar PSSC.jar validate instances/scp41.txt solutions/testSolution1.txt
+```
+
+Example of a feasible solution:
+
+```shell
+java -jar PSSC.jar validate instances/scp41.txt solutions/testSolution2.txt
+``` 
+
+
+ For ease of use, there is an already executable JAR in the root of the project.
 To review a full list of configurable parameters, see the `application.yml`, or review the [configuration section of the Mork documentation](https://docs.mork-optimization.com/en/latest/features/config/).
 
 Example 1: execute default experiment with the default set of instances
@@ -40,6 +63,8 @@ Example: execute the IteratedGreedyExperiment using a different set of instances
 ```
 java -jar target/PSSC.jar --instances.path.default=newinstances --solver.experiment=IteratedGreedyExperiment
 ```
+### Executing solver
+Not implemented yet.
 
 ## Cite
 
