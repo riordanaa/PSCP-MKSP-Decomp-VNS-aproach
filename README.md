@@ -50,8 +50,10 @@ Example of a feasible solution:
 java -jar PSSC.jar validate instances/scp41.txt solutions/testSolution2.txt
 ``` 
 
+### Executing solver
+WARNING: Not implemented yet.
 
- For ease of use, there is an already executable JAR in the root of the project.
+For ease of use, there is an already executable JAR in the root of the project.
 To review a full list of configurable parameters, see the `application.yml`, or review the [configuration section of the Mork documentation](https://docs.mork-optimization.com/en/latest/features/config/).
 
 Example 1: execute default experiment with the default set of instances
@@ -63,8 +65,6 @@ Example: execute the IteratedGreedyExperiment using a different set of instances
 ```
 java -jar target/PSSC.jar --instances.path.default=newinstances --solver.experiment=IteratedGreedyExperiment
 ```
-### Executing solver
-Not implemented yet.
 
 ## Cite
 
