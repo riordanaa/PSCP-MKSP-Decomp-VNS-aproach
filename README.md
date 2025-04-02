@@ -1,6 +1,8 @@
 # [PSSC](https://doi.org/XXXXX)
 
 Original work: https://link.springer.com/article/10.1007/s10732-025-09552-7
+Original repo: https://github.com/LmR308/PSSC
+
 ## Abstract
 The partial set covering problem (PSCP) is a significant combinatorial optimization problem that finds applications in numerous real-world scenarios. The objective of PSCP is to encompass a minimum number of subsets while ensuring the coverage of at least n elements. Due to its NP-hard nature, solving large-scale PSCP efficiently remains a critical issue in computational intelligence. 
 
@@ -10,7 +12,7 @@ Authors involved in this work and their respective contributions:
 - Person2.
 ## Datasets
 
-Instances are categorized in different datasets inside the 'instances' folder. All instances are from the [UCI Machine Learning Repository](https://archive.ics.uci.edu/ml/index.php) or reference to paper where they are from, etc.
+Instances are categorized in different datasets inside the 'instances' folder. All instances are from the [LmR308/PSSC]([https://archive.ics.uci.edu/ml/index.php](https://github.com/LmR308/PSSC)).
 
 ### Instance format
 
