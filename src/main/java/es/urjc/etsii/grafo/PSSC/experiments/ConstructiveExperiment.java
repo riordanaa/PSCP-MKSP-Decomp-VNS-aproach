@@ -35,27 +35,27 @@ public class ConstructiveExperiment extends AbstractExperiment<PSSCSolution, PSS
         // Add random constructive to list of algorithms to test
         // SimpleAlgorithm executes the given constructive and the (optional) local search methods once.
         algorithms.add(new SimpleAlgorithm<>("Random", new PSSCRandomConstructive()));
-
-        // Add GRASP constructive methods to experiment
-        // if the alpha parameter is not given --> random alpha in range [0,1] for each construction
-        var graspBuilder = new GraspBuilder<PSSCListManager.PSSCGRASPMove, PSSCSolution, PSSCInstance>()
-                //.withGreedyFunction()     // Optional, uncomment if a custom greedy function is used instead of the default (move get value)
-                .withObjective(Context.getMainObjective())   // If using the default objective this line can be removed, but you can configure any objective or secondary function you want here, for example in case of a flat landscape you may want to use a custom greedy function
-                .withListManager(graspListManager);
-
-        // Create variants using greedy random strategy
-        graspBuilder.withStrategyGreedyRandom();
-        algorithms.add(new SimpleAlgorithm<>("GR-Random", graspBuilder.withAlphaRandom().build()));
-        for (double alpha : alphaValues) {
-            algorithms.add(new SimpleAlgorithm<>("GR-"+alpha, graspBuilder.withAlphaValue(alpha).build()));
-        }
-
-        // Create variants using random greedy strategy
-        graspBuilder.withStrategyRandomGreedy();
-        algorithms.add(new SimpleAlgorithm<>("RG-Random", graspBuilder.withAlphaRandom().build()));
-        for (double alpha : alphaValues) {
-            algorithms.add(new SimpleAlgorithm<>("RG-"+alpha, graspBuilder.withAlphaValue(alpha).build()));
-        }
+//
+//        // Add GRASP constructive methods to experiment
+//        // if the alpha parameter is not given --> random alpha in range [0,1] for each construction
+//        var graspBuilder = new GraspBuilder<PSSCListManager.PSSCGRASPMove, PSSCSolution, PSSCInstance>()
+//                //.withGreedyFunction()     // Optional, uncomment if a custom greedy function is used instead of the default (move get value)
+//                .withObjective(Context.getMainObjective())   // If using the default objective this line can be removed, but you can configure any objective or secondary function you want here, for example in case of a flat landscape you may want to use a custom greedy function
+//                .withListManager(graspListManager);
+//
+//        // Create variants using greedy random strategy
+//        graspBuilder.withStrategyGreedyRandom();
+//        algorithms.add(new SimpleAlgorithm<>("GR-Random", graspBuilder.withAlphaRandom().build()));
+//        for (double alpha : alphaValues) {
+//            algorithms.add(new SimpleAlgorithm<>("GR-"+alpha, graspBuilder.withAlphaValue(alpha).build()));
+//        }
+//
+//        // Create variants using random greedy strategy
+//        graspBuilder.withStrategyRandomGreedy();
+//        algorithms.add(new SimpleAlgorithm<>("RG-Random", graspBuilder.withAlphaRandom().build()));
+//        for (double alpha : alphaValues) {
+//            algorithms.add(new SimpleAlgorithm<>("RG-"+alpha, graspBuilder.withAlphaValue(alpha).build()));
+//        }
 
         return algorithms;
     }
