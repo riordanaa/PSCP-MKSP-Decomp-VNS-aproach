@@ -10,7 +10,7 @@
     <parent>
         <groupId>es.urjc.etsii.grafo</groupId>
         <artifactId>mork-parent</artifactId>
-        <version>0.21-SNAPSHOT</version>
+        <version>0.21</version>
     </parent>
 
     <dependencies>
