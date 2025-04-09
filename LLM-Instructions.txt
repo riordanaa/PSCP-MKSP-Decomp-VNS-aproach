@@ -1,0 +1,13 @@
+# 1. Random number generation
+To guarantee that results are reproducible, always use RandomManager.getRandom()
+instead of manually creating Random objects, such as new Random(). This ensures
+the same random number sequence is generated each time the program is run, even
+if using multiple threads, which is crucial for debugging and testing purposes.
+Other problematic methods and their replacements:
+Instead of using Collections::shuffle, use es.urjc.etsii.grafo.util.CollectionUtils::shuffle
+Instead of using Math.random(), get a Random object using RandomManager.getRandom(), and call random.nextDouble()
+
+# 2. Avoid using System.out.println, or System.err.println
+Use the Logger class instead. Build a logger in the class where you want to log messages, example:
+private static final Logger log = LoggerFactory.getLogger(ClassName.class);
+

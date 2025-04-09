@@ -44,7 +44,7 @@ solver:
   nWorkers: 4
 
   # Execute benchmark before starting solver? False to skip benchmark.
-  benchmark: true
+  benchmark: false
 
   #### Autoconfig properties
   # Tree depth when using automatic configuration

@@ -8,19 +8,22 @@ import es.urjc.etsii.grafo.create.grasp.GRASPListManager;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Candidate list manager for the GRASP constructive method.
+ */
 public class PSSCListManager extends GRASPListManager<PSSCListManager.PSSCGRASPMove, PSSCSolution, PSSCInstance> {
 
     /**
-     * Generate initial candidate list. The list will be sorted if necessary by the constructive method.
+     * Generate initial candidate list.
      * @param solution Current solution
-     * @return a candidate list
+     * @return an UNSORTED candidate list
      */
     @Override
     public List<PSSCGRASPMove> buildInitialCandidateList(PSSCSolution solution) {
         var list = new ArrayList<PSSCGRASPMove>();
 
         // TODO Generate a list with all valid movements for current solution
-        // GRASP ends when CL is empty
+        // GRASP constructive method ends when CL is empty
 
         return list;
     }
@@ -35,9 +38,9 @@ public class PSSCListManager extends GRASPListManager<PSSCListManager.PSSCGRASPM
      */
     @Override
     public List<PSSCGRASPMove> updateCandidateList(PSSCSolution solution, PSSCGRASPMove move, List<PSSCGRASPMove> candidateList, int index) {
-        // List can be partially updated / modified
-        // recalculating from scratch is an ok start and can be optimized later if necessary
-        // Do not prematurely micro optimize, split the code in small methods and profile first
+        // List can be partially updated / modified if required for performance
+        // Recalculating from scratch is OK and can be optimized later if necessary
+        // Do NOT prematurely optimize, split the code in small methods and profile first to see if this is necessary
         return buildInitialCandidateList(solution);
     }
 
@@ -52,8 +55,7 @@ public class PSSCListManager extends GRASPListManager<PSSCListManager.PSSCGRASPM
             // Return the modified solutions.
             // It is up to the implementation to decide if the original solution is modified
             // in place or a new one is created by cloning the original solution and then applying the changes.
-            // This method should be idempotent, i.e. calling it multiple times with the same solution
-            // should return the same result
+            // NOTE: Calling this method multiple times with a solution and its clones must return the same result
             throw new UnsupportedOperationException("_execute() in PSSCListManager not implemented yet");
         }
 
