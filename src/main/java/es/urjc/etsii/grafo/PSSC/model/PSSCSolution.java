@@ -41,6 +41,14 @@ public class PSSCSolution extends Solution<PSSCSolution, PSSCInstance> {
         chosenSets.add(set);
     }
 
+    public void removeSet(int set) {
+        chosenSets.remove(set);
+    }
+
+    public BitSet getChosenSets() {
+        return chosenSets;
+    }
+
     @Override
     public PSSCSolution cloneSolution() {
         return new PSSCSolution(this);
