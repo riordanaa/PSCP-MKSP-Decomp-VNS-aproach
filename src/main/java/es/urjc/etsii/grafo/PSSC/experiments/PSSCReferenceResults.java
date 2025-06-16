@@ -1,4 +1,3 @@
-//TODO Optional: Uncomment and configure the reference results to use when comparing our algorithms during experimentation
 package es.urjc.etsii.grafo.PSSC.experiments;
 
 
@@ -13,6 +12,9 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.stream.Stream;
 
+/**
+ * Loads sota results from a CSV file to comapre automatically against their algorithm.
+ */
 public class PSSCReferenceResults extends ReferenceResultProvider {
 
     private final Map<String, ReferenceResult> sotaResults = new HashMap<>();

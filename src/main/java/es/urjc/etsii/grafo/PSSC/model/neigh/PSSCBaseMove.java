@@ -1,5 +1,7 @@
-package es.urjc.etsii.grafo.PSSC.model;
+package es.urjc.etsii.grafo.PSSC.model.neigh;
 
+import es.urjc.etsii.grafo.PSSC.model.PSSCInstance;
+import es.urjc.etsii.grafo.PSSC.model.PSSCSolution;
 import es.urjc.etsii.grafo.solution.Move;
 
 /**
@@ -21,7 +23,7 @@ public abstract class PSSCBaseMove extends Move<PSSCSolution, PSSCInstance> {
      * Executes the proposed move,
      * to be implemented by each move type.
      * It is up to the implementation to decide if the original solution is modified
-     * in place or a new one is created by cloning the original solution and then applying the changes.
+     * in place, or a new one is created by cloning the original solution and then applying the changes.
      * <p></p>
      * This method should be idempotent, i.e. calling it multiple times with the same solution
      * should return the same result

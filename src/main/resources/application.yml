@@ -33,7 +33,7 @@ solver:
   experiments: '.*'
 
   # How many times should each experiment be repeated. Recommended a minimum of 30
-  repetitions: 1000
+  repetitions: 100
 
   # Use parallel executor DISABLE IF THE ALGORITHM IS ALREADY PARALLELIZED
   # Valid Values: true, false

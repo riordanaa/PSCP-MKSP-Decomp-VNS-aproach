@@ -3,6 +3,8 @@ package es.urjc.etsii.grafo.PSSC.model;
 import es.urjc.etsii.grafo.solution.Solution;
 import es.urjc.etsii.grafo.util.collections.BitSet;
 
+import java.util.Objects;
+
 public class PSSCSolution extends Solution<PSSCSolution, PSSCInstance> {
 
     /**
@@ -116,7 +118,6 @@ public class PSSCSolution extends Solution<PSSCSolution, PSSCInstance> {
 
     /**
      * Minimum points that must be covered for the solution to be feasible
-     * @return
      */
     public int minCoveredRequired(){
         return minCoveredRequired;
@@ -130,5 +131,17 @@ public class PSSCSolution extends Solution<PSSCSolution, PSSCInstance> {
     @Override
     public String toString() {
         return chosenSets.size() + ": " + chosenSets;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass()) return false;
+        PSSCSolution that = (PSSCSolution) o;
+        return Objects.equals(chosenSets, that.chosenSets);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hashCode(chosenSets);
     }
 }

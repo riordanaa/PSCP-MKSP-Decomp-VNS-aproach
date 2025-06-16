@@ -1,6 +1,7 @@
 package es.urjc.etsii.grafo.PSSC;
 
 import es.urjc.etsii.grafo.PSSC.model.*;
+import es.urjc.etsii.grafo.PSSC.model.neigh.PSSCBaseMove;
 import es.urjc.etsii.grafo.solution.Objective;
 import es.urjc.etsii.grafo.solver.Mork;
 

@@ -6,7 +6,7 @@ import es.urjc.etsii.grafo.create.Constructive;
 import es.urjc.etsii.grafo.util.random.RandomManager;
 
 /**
- * Create a random solution for the PSSC: Partial Set Covering Problem
+ * Create a random solution for the PSCP: Partial Set Covering Problem
  */
 public class PSSCRandomConstructive extends Constructive<PSSCSolution, PSSCInstance> {
 
