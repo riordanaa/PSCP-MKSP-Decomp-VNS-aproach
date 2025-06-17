@@ -115,7 +115,16 @@ public class PSSCSolution extends Solution<PSSCSolution, PSSCInstance> {
     public BitSet getChosenSets() {
         return chosenSets;
     }
+    // Add this method to PSSCSolution.java
 
+    /**---------------------------------------------------- EDIT
+     * Returns the raw coverCount array.
+     * Each index represents a point, and the value is the number of chosen sets covering it.
+     * return the cover count array
+     */
+    public int[] getCoverCount(){
+        return this.coverCount;
+    }
     /**
      * Minimum points that must be covered for the solution to be feasible
      */
