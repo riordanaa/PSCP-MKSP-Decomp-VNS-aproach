@@ -1,4 +1,4 @@
-# [PSSC](https://doi.org/XXXXX)
+# [PSSC](https://doi.org/XXXXX) Gemini chat to get this code https://aistudio.google.com/app/prompts?state=%7B%22ids%22:%5B%221_nBmjZMRT-s8-bzvZZMLZQj249MMsk7q%22%5D,%22action%22:%22open%22,%22userId%22:%22100803290551923430271%22,%22resourceKeys%22:%7B%7D%7D&usp=sharing
 
 Original work: https://link.springer.com/article/10.1007/s10732-025-09552-7
 Original repo: https://github.com/LmR308/PSSC
