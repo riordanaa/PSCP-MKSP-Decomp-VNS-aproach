@@ -1,0 +1,32 @@
+{
+  "groups": [
+    {
+      "name": "serializers.node-list",
+      "type": "es.urjc.etsii.grafo.PSSC.io.PSSCSolutionExporter$PSSCSolutionExporterConfig",
+      "sourceType": "es.urjc.etsii.grafo.PSSC.io.PSSCSolutionExporter$PSSCSolutionExporterConfig"
+    }
+  ],
+  "properties": [
+    {
+      "name": "serializers.node-list.enabled",
+      "type": "java.lang.Boolean",
+      "sourceType": "es.urjc.etsii.grafo.PSSC.io.PSSCSolutionExporter$PSSCSolutionExporterConfig"
+    },
+    {
+      "name": "serializers.node-list.folder",
+      "type": "java.lang.String",
+      "sourceType": "es.urjc.etsii.grafo.PSSC.io.PSSCSolutionExporter$PSSCSolutionExporterConfig"
+    },
+    {
+      "name": "serializers.node-list.format",
+      "type": "java.lang.String",
+      "sourceType": "es.urjc.etsii.grafo.PSSC.io.PSSCSolutionExporter$PSSCSolutionExporterConfig"
+    },
+    {
+      "name": "serializers.node-list.frequency",
+      "type": "es.urjc.etsii.grafo.io.serializers.SolutionExportFrequency",
+      "sourceType": "es.urjc.etsii.grafo.PSSC.io.PSSCSolutionExporter$PSSCSolutionExporterConfig"
+    }
+  ],
+  "hints": []
+}

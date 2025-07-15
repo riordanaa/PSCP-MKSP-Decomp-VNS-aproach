@@ -5,28 +5,39 @@ import es.urjc.etsii.grafo.PSSC.model.PSSCSolution;
 import es.urjc.etsii.grafo.solution.Move;
 
 /**
- * Example movement class. Can be an insert, a swap, anything that modifies the solution state
+ * Base move class for all moves in the PSSC problem.
+ * It now stores a reference to the solution at the moment of the move's creation,
+ * which is essential for calculating score changes without re-passing the solution.
  */
 public abstract class PSSCBaseMove extends Move<PSSCSolution, PSSCInstance> {
 
-    // common properties between moves should be stored here
+    // ADDED: Field to store the solution context.
+    private final PSSCSolution solution;
 
     /**
      * Move constructor
-     * @param solution solution
+     * @param solution The solution in which this move is being generated.
      */
     public PSSCBaseMove(PSSCSolution solution) {
         super(solution);
+        // Store the solution in the new field
+        this.solution = solution;
     }
+
+    /**
+     * Gets the solution as it was when the move was created.
+     * @return The solution context for this move.
+     */
+    public PSSCSolution getSolution() {
+        return this.solution;
+    }
+
 
     /**
      * Executes the proposed move,
      * to be implemented by each move type.
-     * It is up to the implementation to decide if the original solution is modified
-     * in place, or a new one is created by cloning the original solution and then applying the changes.
-     * <p></p>
-     * This method should be idempotent, i.e. calling it multiple times with the same solution
-     * should return the same result
+     * This method should be idempotent.
+     *
      * @param solution Solution where this move will be applied to.
      * @return modified solution
      */
@@ -35,17 +46,15 @@ public abstract class PSSCBaseMove extends Move<PSSCSolution, PSSCInstance> {
 
     /**
      * Get the movement value, represents how much does the move changes the f.o of a solution if executed
-     *
      * @return f.o change
      */
     public abstract double getScoreChange();
 
     /**
-     * Returns a String representation of the current movement. Only use relevant fields.
-     * Tip: Default IntelliJ implementation is fine
-     *
+     * Returns a String representation of the current movement.
      * @return human readable string
      */
+    @Override
     public abstract String toString();
 
     /** {@inheritDoc} */
@@ -55,5 +64,4 @@ public abstract class PSSCBaseMove extends Move<PSSCSolution, PSSCInstance> {
     /** {@inheritDoc} */
     @Override
     public abstract int hashCode();
-
 }

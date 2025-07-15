@@ -1,0 +1,302 @@
+{
+  "InstanceName" : "scp51.txt",
+  "Algorithm" : {
+    "name" : "RG-1.0"
+  },
+  "StackTrace" : "es.urjc.etsii.grafo.exception.InvalidSolutionException: Current coverage (0.0) < required coverage (0.9)\r\n\tat es.urjc.etsii.grafo.solution.ValidationResult.throwIfFail(ValidationResult.java:59)\r\n\tat es.urjc.etsii.grafo.util.Context.validate(Context.java:88)\r\n\tat es.urjc.etsii.grafo.executors.Executor.doWork(Executor.java:149)\r\n\tat es.urjc.etsii.grafo.executors.SequentialExecutor.executeExperiment(SequentialExecutor.java:83)\r\n\tat es.urjc.etsii.grafo.orchestrator.DefaultOrchestrator.experimentWrapper(DefaultOrchestrator.java:119)\r\n\tat es.urjc.etsii.grafo.orchestrator.DefaultOrchestrator.run(DefaultOrchestrator.java:101)\r\n\tat es.urjc.etsii.grafo.solver.RunOnStart.run(RunOnStart.java:34)\r\n\tat org.springframework.boot.SpringApplication.lambda$callRunner$5(SpringApplication.java:788)\r\n\tat org.springframework.util.function.ThrowingConsumer$1.acceptWithException(ThrowingConsumer.java:82)\r\n\tat org.springframework.util.function.ThrowingConsumer.accept(ThrowingConsumer.java:60)\r\n\tat org.springframework.util.function.ThrowingConsumer$1.accept(ThrowingConsumer.java:86)\r\n\tat org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:796)\r\n\tat org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:787)\r\n\tat org.springframework.boot.SpringApplication.lambda$callRunners$3(SpringApplication.java:772)\r\n\tat java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184)\r\n\tat java.base/java.util.stream.SortedOps$SizedRefSortingSink.end(SortedOps.java:357)\r\n\tat java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:510)\r\n\tat java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)\r\n\tat java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151)\r\n\tat java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174)\r\n\tat java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)\r\n\tat java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596)\r\n\tat org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:772)\r\n\tat org.springframework.boot.SpringApplication.run(SpringApplication.java:325)\r\n\tat es.urjc.etsii.grafo.solver.Mork.start(Mork.java:69)\r\n\tat es.urjc.etsii.grafo.solver.Mork.start(Mork.java:37)\r\n\tat es.urjc.etsii.grafo.PSSC.Main.main(Main.java:29)\r\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)\r\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:580)\r\n\tat org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:102)\r\n\tat org.springframework.boot.loader.launch.Launcher.launch(Launcher.java:64)\r\n\tat org.springframework.boot.loader.launch.JarLauncher.main(JarLauncher.java:40)\r\n",
+  "Error" : {
+    "cause" : null,
+    "stackTrace" : [ {
+      "classLoaderName" : null,
+      "moduleName" : null,
+      "moduleVersion" : null,
+      "methodName" : "throwIfFail",
+      "fileName" : "ValidationResult.java",
+      "lineNumber" : 59,
+      "className" : "es.urjc.etsii.grafo.solution.ValidationResult",
+      "nativeMethod" : false
+    }, {
+      "classLoaderName" : null,
+      "moduleName" : null,
+      "moduleVersion" : null,
+      "methodName" : "validate",
+      "fileName" : "Context.java",
+      "lineNumber" : 88,
+      "className" : "es.urjc.etsii.grafo.util.Context",
+      "nativeMethod" : false
+    }, {
+      "classLoaderName" : null,
+      "moduleName" : null,
+      "moduleVersion" : null,
+      "methodName" : "doWork",
+      "fileName" : "Executor.java",
+      "lineNumber" : 149,
+      "className" : "es.urjc.etsii.grafo.executors.Executor",
+      "nativeMethod" : false
+    }, {
+      "classLoaderName" : null,
+      "moduleName" : null,
+      "moduleVersion" : null,
+      "methodName" : "executeExperiment",
+      "fileName" : "SequentialExecutor.java",
+      "lineNumber" : 83,
+      "className" : "es.urjc.etsii.grafo.executors.SequentialExecutor",
+      "nativeMethod" : false
+    }, {
+      "classLoaderName" : null,
+      "moduleName" : null,
+      "moduleVersion" : null,
+      "methodName" : "experimentWrapper",
+      "fileName" : "DefaultOrchestrator.java",
+      "lineNumber" : 119,
+      "className" : "es.urjc.etsii.grafo.orchestrator.DefaultOrchestrator",
+      "nativeMethod" : false
+    }, {
+      "classLoaderName" : null,
+      "moduleName" : null,
+      "moduleVersion" : null,
+      "methodName" : "run",
+      "fileName" : "DefaultOrchestrator.java",
+      "lineNumber" : 101,
+      "className" : "es.urjc.etsii.grafo.orchestrator.DefaultOrchestrator",
+      "nativeMethod" : false
+    }, {
+      "classLoaderName" : null,
+      "moduleName" : null,
+      "moduleVersion" : null,
+      "methodName" : "run",
+      "fileName" : "RunOnStart.java",
+      "lineNumber" : 34,
+      "className" : "es.urjc.etsii.grafo.solver.RunOnStart",
+      "nativeMethod" : false
+    }, {
+      "classLoaderName" : null,
+      "moduleName" : null,
+      "moduleVersion" : null,
+      "methodName" : "lambda$callRunner$5",
+      "fileName" : "SpringApplication.java",
+      "lineNumber" : 788,
+      "className" : "org.springframework.boot.SpringApplication",
+      "nativeMethod" : false
+    }, {
+      "classLoaderName" : null,
+      "moduleName" : null,
+      "moduleVersion" : null,
+      "methodName" : "acceptWithException",
+      "fileName" : "ThrowingConsumer.java",
+      "lineNumber" : 82,
+      "className" : "org.springframework.util.function.ThrowingConsumer$1",
+      "nativeMethod" : false
+    }, {
+      "classLoaderName" : null,
+      "moduleName" : null,
+      "moduleVersion" : null,
+      "methodName" : "accept",
+      "fileName" : "ThrowingConsumer.java",
+      "lineNumber" : 60,
+      "className" : "org.springframework.util.function.ThrowingConsumer",
+      "nativeMethod" : false
+    }, {
+      "classLoaderName" : null,
+      "moduleName" : null,
+      "moduleVersion" : null,
+      "methodName" : "accept",
+      "fileName" : "ThrowingConsumer.java",
+      "lineNumber" : 86,
+      "className" : "org.springframework.util.function.ThrowingConsumer$1",
+      "nativeMethod" : false
+    }, {
+      "classLoaderName" : null,
+      "moduleName" : null,
+      "moduleVersion" : null,
+      "methodName" : "callRunner",
+      "fileName" : "SpringApplication.java",
+      "lineNumber" : 796,
+      "className" : "org.springframework.boot.SpringApplication",
+      "nativeMethod" : false
+    }, {
+      "classLoaderName" : null,
+      "moduleName" : null,
+      "moduleVersion" : null,
+      "methodName" : "callRunner",
+      "fileName" : "SpringApplication.java",
+      "lineNumber" : 787,
+      "className" : "org.springframework.boot.SpringApplication",
+      "nativeMethod" : false
+    }, {
+      "classLoaderName" : null,
+      "moduleName" : null,
+      "moduleVersion" : null,
+      "methodName" : "lambda$callRunners$3",
+      "fileName" : "SpringApplication.java",
+      "lineNumber" : 772,
+      "className" : "org.springframework.boot.SpringApplication",
+      "nativeMethod" : false
+    }, {
+      "classLoaderName" : null,
+      "moduleName" : "java.base",
+      "moduleVersion" : "21.0.6",
+      "methodName" : "accept",
+      "fileName" : "ForEachOps.java",
+      "lineNumber" : 184,
+      "className" : "java.util.stream.ForEachOps$ForEachOp$OfRef",
+      "nativeMethod" : false
+    }, {
+      "classLoaderName" : null,
+      "moduleName" : "java.base",
+      "moduleVersion" : "21.0.6",
+      "methodName" : "end",
+      "fileName" : "SortedOps.java",
+      "lineNumber" : 357,
+      "className" : "java.util.stream.SortedOps$SizedRefSortingSink",
+      "nativeMethod" : false
+    }, {
+      "classLoaderName" : null,
+      "moduleName" : "java.base",
+      "moduleVersion" : "21.0.6",
+      "methodName" : "copyInto",
+      "fileName" : "AbstractPipeline.java",
+      "lineNumber" : 510,
+      "className" : "java.util.stream.AbstractPipeline",
+      "nativeMethod" : false
+    }, {
+      "classLoaderName" : null,
+      "moduleName" : "java.base",
+      "moduleVersion" : "21.0.6",
+      "methodName" : "wrapAndCopyInto",
+      "fileName" : "AbstractPipeline.java",
+      "lineNumber" : 499,
+      "className" : "java.util.stream.AbstractPipeline",
+      "nativeMethod" : false
+    }, {
+      "classLoaderName" : null,
+      "moduleName" : "java.base",
+      "moduleVersion" : "21.0.6",
+      "methodName" : "evaluateSequential",
+      "fileName" : "ForEachOps.java",
+      "lineNumber" : 151,
+      "className" : "java.util.stream.ForEachOps$ForEachOp",
+      "nativeMethod" : false
+    }, {
+      "classLoaderName" : null,
+      "moduleName" : "java.base",
+      "moduleVersion" : "21.0.6",
+      "methodName" : "evaluateSequential",
+      "fileName" : "ForEachOps.java",
+      "lineNumber" : 174,
+      "className" : "java.util.stream.ForEachOps$ForEachOp$OfRef",
+      "nativeMethod" : false
+    }, {
+      "classLoaderName" : null,
+      "moduleName" : "java.base",
+      "moduleVersion" : "21.0.6",
+      "methodName" : "evaluate",
+      "fileName" : "AbstractPipeline.java",
+      "lineNumber" : 234,
+      "className" : "java.util.stream.AbstractPipeline",
+      "nativeMethod" : false
+    }, {
+      "classLoaderName" : null,
+      "moduleName" : "java.base",
+      "moduleVersion" : "21.0.6",
+      "methodName" : "forEach",
+      "fileName" : "ReferencePipeline.java",
+      "lineNumber" : 596,
+      "className" : "java.util.stream.ReferencePipeline",
+      "nativeMethod" : false
+    }, {
+      "classLoaderName" : null,
+      "moduleName" : null,
+      "moduleVersion" : null,
+      "methodName" : "callRunners",
+      "fileName" : "SpringApplication.java",
+      "lineNumber" : 772,
+      "className" : "org.springframework.boot.SpringApplication",
+      "nativeMethod" : false
+    }, {
+      "classLoaderName" : null,
+      "moduleName" : null,
+      "moduleVersion" : null,
+      "methodName" : "run",
+      "fileName" : "SpringApplication.java",
+      "lineNumber" : 325,
+      "className" : "org.springframework.boot.SpringApplication",
+      "nativeMethod" : false
+    }, {
+      "classLoaderName" : null,
+      "moduleName" : null,
+      "moduleVersion" : null,
+      "methodName" : "start",
+      "fileName" : "Mork.java",
+      "lineNumber" : 69,
+      "className" : "es.urjc.etsii.grafo.solver.Mork",
+      "nativeMethod" : false
+    }, {
+      "classLoaderName" : null,
+      "moduleName" : null,
+      "moduleVersion" : null,
+      "methodName" : "start",
+      "fileName" : "Mork.java",
+      "lineNumber" : 37,
+      "className" : "es.urjc.etsii.grafo.solver.Mork",
+      "nativeMethod" : false
+    }, {
+      "classLoaderName" : null,
+      "moduleName" : null,
+      "moduleVersion" : null,
+      "methodName" : "main",
+      "fileName" : "Main.java",
+      "lineNumber" : 29,
+      "className" : "es.urjc.etsii.grafo.PSSC.Main",
+      "nativeMethod" : false
+    }, {
+      "classLoaderName" : null,
+      "moduleName" : "java.base",
+      "moduleVersion" : "21.0.6",
+      "methodName" : "invoke",
+      "fileName" : "DirectMethodHandleAccessor.java",
+      "lineNumber" : 103,
+      "className" : "jdk.internal.reflect.DirectMethodHandleAccessor",
+      "nativeMethod" : false
+    }, {
+      "classLoaderName" : null,
+      "moduleName" : "java.base",
+      "moduleVersion" : "21.0.6",
+      "methodName" : "invoke",
+      "fileName" : "Method.java",
+      "lineNumber" : 580,
+      "className" : "java.lang.reflect.Method",
+      "nativeMethod" : false
+    }, {
+      "classLoaderName" : "app",
+      "moduleName" : null,
+      "moduleVersion" : null,
+      "methodName" : "launch",
+      "fileName" : "Launcher.java",
+      "lineNumber" : 102,
+      "className" : "org.springframework.boot.loader.launch.Launcher",
+      "nativeMethod" : false
+    }, {
+      "classLoaderName" : "app",
+      "moduleName" : null,
+      "moduleVersion" : null,
+      "methodName" : "launch",
+      "fileName" : "Launcher.java",
+      "lineNumber" : 64,
+      "className" : "org.springframework.boot.loader.launch.Launcher",
+      "nativeMethod" : false
+    }, {
+      "classLoaderName" : "app",
+      "moduleName" : null,
+      "moduleVersion" : null,
+      "methodName" : "main",
+      "fileName" : "JarLauncher.java",
+      "lineNumber" : 40,
+      "className" : "org.springframework.boot.loader.launch.JarLauncher",
+      "nativeMethod" : false
+    } ],
+    "message" : "Current coverage (0.0) < required coverage (0.9)",
+    "suppressed" : [ ],
+    "localizedMessage" : "Current coverage (0.0) < required coverage (0.9)"
+  }
+}
