@@ -16,8 +16,7 @@ C:\Users\aidan\Desktop\GeminiDR\target\classes
 C:\Users\aidan\Desktop\GeminiDR\target\generated-sources\aspectj-maven-plugin
 C:\Users\aidan\Desktop\GeminiDR\src\main\java\es\urjc\etsii\grafo\PSSC\algorithms\ExampleAlgorithm.java
 C:\Users\aidan\Desktop\GeminiDR\src\main\java\es\urjc\etsii\grafo\PSSC\algorithms\PSSCVariableNeighborhoodDescent.java
-C:\Users\aidan\Desktop\GeminiDR\src\main\java\es\urjc\etsii\grafo\PSSC\algorithms\VnsPscp.java
-C:\Users\aidan\Desktop\GeminiDR\src\main\java\es\urjc\etsii\grafo\PSSC\constructives\PSSCGRASPConstructive.java
+C:\Users\aidan\Desktop\GeminiDR\src\main\java\es\urjc\etsii\grafo\PSSC\algorithms\VnsPscp11swaponlyintelligentshake.java
 C:\Users\aidan\Desktop\GeminiDR\src\main\java\es\urjc\etsii\grafo\PSSC\constructives\PSSCGreedyConstructive.java
 C:\Users\aidan\Desktop\GeminiDR\src\main\java\es\urjc\etsii\grafo\PSSC\constructives\PSSCRandomConstructive.java
 C:\Users\aidan\Desktop\GeminiDR\src\main\java\es\urjc\etsii\grafo\PSSC\experiments\ConstructiveExperiment.java
@@ -27,6 +26,7 @@ C:\Users\aidan\Desktop\GeminiDR\src\main\java\es\urjc\etsii\grafo\PSSC\Main.java
 C:\Users\aidan\Desktop\GeminiDR\src\main\java\es\urjc\etsii\grafo\PSSC\model\neigh\DropNeighborhood.java
 C:\Users\aidan\Desktop\GeminiDR\src\main\java\es\urjc\etsii\grafo\PSSC\model\neigh\PSSCBaseMove.java
 C:\Users\aidan\Desktop\GeminiDR\src\main\java\es\urjc\etsii\grafo\PSSC\model\neigh\Swap11Neighborhood.java
+C:\Users\aidan\Desktop\GeminiDR\src\main\java\es\urjc\etsii\grafo\PSSC\model\neigh\Swap21optNeighborhood.java
 C:\Users\aidan\Desktop\GeminiDR\src\main\java\es\urjc\etsii\grafo\PSSC\model\neigh\Swap22Neighborhood.java
 C:\Users\aidan\Desktop\GeminiDR\src\main\java\es\urjc\etsii\grafo\PSSC\model\neigh\SwapAndDropNeighborhood.java
 C:\Users\aidan\Desktop\GeminiDR\src\main\java\es\urjc\etsii\grafo\PSSC\model\neigh\SwapNeighborhood.java
@@ -36,4 +36,3 @@ C:\Users\aidan\Desktop\GeminiDR\src\main\java\es\urjc\etsii\grafo\PSSC\model\PSS
 C:\Users\aidan\Desktop\GeminiDR\src\main\java\es\urjc\etsii\grafo\PSSC\model\PSSCSolutionValidator.java
 C:\Users\aidan\Desktop\GeminiDR\src\main\java\es\urjc\etsii\grafo\PSSC\shake\ExamplePSSCShake.java
 C:\Users\aidan\Desktop\GeminiDR\src\main\java\es\urjc\etsii\grafo\PSSC\shake\PSSCAddShake.java
-C:\Users\aidan\Desktop\GeminiDR\src\main\java\es\urjc\etsii\grafo\PSSC\shake\ShakeDestroyAndRepair.java

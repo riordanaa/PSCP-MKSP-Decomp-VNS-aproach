@@ -1,6 +1,6 @@
 package es.urjc.etsii.grafo.PSSC.experiments;
 
-import es.urjc.etsii.grafo.PSSC.algorithms.VnsPscp;
+import es.urjc.etsii.grafo.PSSC.algorithms.VnsPscp11swaponlyintelligentshake;
 import es.urjc.etsii.grafo.PSSC.constructives.PSSCGreedyConstructive;
 import es.urjc.etsii.grafo.PSSC.model.PSSCInstance;
 import es.urjc.etsii.grafo.PSSC.model.PSSCSolution;
@@ -43,7 +43,7 @@ public class ConstructiveExperiment extends AbstractExperiment<PSSCSolution, PSS
         // A value of 20 means the shake can remove and repair up to 20% of the sets.
         int lMaxPercentage = 20;
 
-        var vnsPscp = new VnsPscp(
+        var vnsPscp = new VnsPscp11swaponlyintelligentshake(
                 "VNS-PSCP", // Algorithm name for the results table
                 lMaxPercentage
         );
